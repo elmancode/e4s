@@ -1,0 +1,385 @@
+.home {
+  // section 1
+  .introduction {
+    height: 52rem;
+    background-image: url(../../image/cover.jpg);
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    .overlay {
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.6);
+      opacity: 1;
+    }
+    .content {
+      width: 100%;
+      position: absolute;
+      top: 16rem;
+      h1 {
+        color: #fff;
+        width: 80%;
+        font-size: 3.5rem;
+        font-weight: 900;
+        line-height: 70px;
+        font-family: "Poppins", sans-serif;
+        margin-bottom: 50px;
+      }
+
+      .visitWork {
+        display: inline-block;
+        background: #3a908a;
+        border: 1px solid #3a908a;
+        border-radius: 100px;
+        padding: 12px 33px;
+        box-shadow: 0px 10px 30px rgba(0, 0, 0, .4);
+        cursor: pointer;
+
+        a {
+          color: #fff;
+          font-family: "Poppins", sans-serif;
+          font-size: 1.2rem;
+          font-weight: 900;
+        }
+        &:hover {
+          background-color: transparent;
+          transition: 0.6s;
+          a {
+            color: #3a908a;
+          }
+        }
+      }
+    }
+  }
+
+  //   section 2
+  .service {
+    font-family: "Poppins", sans-serif;
+    margin-top: 9rem;
+    margin-bottom: 8rem;
+    .content {
+      text-align: center;
+      span {
+        color: #3a908a;
+        font-weight: bold;
+      }
+      h3 {
+        padding-top: 30px;
+        margin: 0 18rem;
+        font-size: 40px;
+        line-height: 52px;
+        font-weight: 400;
+        color: #1f1f1f;
+        font-size: bold;
+      }
+    }
+
+    .service-row {
+      margin-top: 100px;
+      display: flex;
+      justify-content: space-evenly;
+      .row {
+        width: 22rem;
+        height: 22rem;
+        text-align: center;
+        display: grid;
+        place-items: center;
+        border: 1px solid #cbcdcf;
+        border-radius: 7px;
+        cursor: pointer;
+        &:hover {
+          border-top: 3px solid #3a908a;
+          transition: 0.4s;
+          box-shadow: 0 10px 20px 0 rgba(99, 99, 99, 0.35);
+          transform: scale(1.05);
+        }
+        img {
+          width: 80px;
+          margin-bottom: 30px;
+        }
+        h3{
+          color: #000;
+          font-weight: 600;
+        }
+
+        p {
+          margin-top: 20px;
+          font-size: 14px;
+          color: #848585;
+        }
+      }
+    }
+  }
+
+  //   section 3
+  .about {
+    display: flex;
+    height: 44rem;
+
+    .leftside {
+      width: 50%;
+      img {
+        height: 100%;
+        margin-left: -14px;
+      }
+    }
+    .rightside {
+      background: #1f1f1f;
+      font-family: "Poppins", sans-serif;
+      padding: 200px 100px;
+      width: 50%;
+      color: #fff;
+      h4 {
+        margin-bottom: 20px;
+      }
+      span {
+        font-size: 40px;
+      }
+      p {
+        margin-top: 20px;
+        color: #c9c9c9;
+      }
+
+      .aboutus {
+        display: inline-block;
+        background: #3a908a;
+        border: 1px solid #3a908a;
+        border-radius: 30px;
+        padding: 12px 33px;
+        cursor: pointer;
+        margin-top: 40px;
+        a {
+          color: #fff;
+          font-family: "Poppins", sans-serif;
+          font-weight: 900;
+          span {
+            font-size: 16px;
+            font-weight: 500;
+          }
+        }
+        &:hover {
+          background-color: transparent;
+          transition: 0.6s;
+          a {
+            color: #3a908a;
+          }
+        }
+      }
+    }
+  }
+
+  //   section 4
+  .portfolio {
+    margin-top: 9rem;
+    font-family: "Poppins", sans-serif;
+    .content {
+      text-align: center;
+      display: grid;
+      place-items: center;
+      h3 {
+        padding-top: 30px;
+        margin: 0 18rem;
+        font-size: 40px;
+        color: #1f1f1f;
+        font-size: bold;
+      }
+      p{
+        color: #727272;
+      }
+    }
+
+    .projectsData {
+      margin-top: 2rem;
+      text-align: center;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  //   section 5
+  .how_work {
+    display: flex;
+    height: 44rem;
+    margin-top: 9rem;
+
+    .leftside {
+      background-color: #fff;
+      font-family: "Poppins", sans-serif;
+      padding: 200px 100px;
+      width: 50%;
+      z-index: 1;
+
+      h3 {
+        font-size: 40px;
+        margin-bottom: 30px;
+      }
+      p {
+        font-size: 15px;
+        color: #707070;
+      }
+      .watch {
+        margin-top: 40px;
+        display: flex;
+        align-items: center;
+        .video_watch {
+          background: #3a908a;
+          border: 1px solid #3a908a;
+          border-radius: 50px;
+          padding: 20px 20px;
+          width: 70px;
+          height: 70px;
+          cursor: pointer;
+          a {
+            color: #fff;
+            .play {
+              font-size: 30px;
+            }
+          }
+          &:hover {
+            background-color: transparent;
+            transition: 0.6s;
+            a {
+              color: #3a908a;
+            }
+          }
+        }
+        .text {
+          font-size: 20px;
+          margin-left: 20px;
+        }
+      }
+    }
+
+    .rightside {
+      width: 50%;
+      background-image: url(../../image/how_work.jpg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
+    }
+  }
+
+  // section 6
+  .partners {
+    margin-top: 9rem;
+    font-family: "Poppins", sans-serif;
+    .content {
+      text-align: center;
+      display: grid;
+      place-items: center;
+      h3 {
+        padding-top: 30px;
+        margin: 0 18rem;
+        font-size: 40px;
+        color: #1f1f1f;
+        font-size: bold;
+      }
+      p {
+        margin-top: 30px;
+        color: #727272;
+        width: 38rem;
+      }
+    }
+    .partners_logo{
+      display: flex;
+      justify-content: space-between;
+      margin-top: 50px;
+      img{
+        height: 60px;
+        opacity: 0.8;
+      }
+    }
+}
+
+  // section 7
+  .get_in_touch {
+    margin-top: 9rem;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    .content {
+      display: grid;
+      place-items: center;
+      h3 {
+        font-size: 40px;
+        color: #1f1f1f;
+        line-height: 52px;
+        font-weight: 400;
+      }
+      p {
+        margin-top: 30px;
+        width: 500px;
+        font-size: 14px;
+        color: #707070;
+      }
+    }
+
+    .form {
+      display: grid;
+      place-items: center;
+      form {
+        margin-top: 90px;
+        width: 70%;
+
+        .row1 {
+          display: flex;
+          justify-content: space-between;
+          input {
+            width: 45%;
+          }
+        }
+
+        input {
+          width: 100%;
+          border: 1px solid #c9c9c9;
+          height: 50px;
+          outline: none;
+          border-radius: 30px;
+          padding: 20px 16px;
+          margin-bottom: 25px;
+          font-size: 14px;
+          color: #000;
+          font-weight: 400;
+          font-family: "Poppins", sans-serif;
+        }
+
+        textarea {
+          height: 13rem;
+          width: 100%;
+          border: 1px solid #c9c9c9;
+          outline: none;
+          border-radius: 30px;
+          padding: 20px 16px;
+          margin-bottom: 25px;
+          font-size: 14px;
+          color: #000;
+          font-weight: 400;
+          font-family: "Poppins", sans-serif;
+        }
+
+        .boxed_btn {
+          background: #3a908a;
+          width: 100%;
+          color: #fff;
+          display: inline-block;
+          padding: 12px 33px;
+          font-size: 16px;
+          font-weight: 500;
+          border: 1px solid transparent;
+          border-radius: 30px;
+          text-align: center;
+          cursor: pointer;
+          font-family: "Poppins", sans-serif;
+          &:hover {
+            background-color: transparent;
+            transition: 1s;
+            border: 1px solid #3a908a;
+            color: #3a908a;
+          }
+        }
+      }
+    }
+  }
+}
