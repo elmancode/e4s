@@ -19,6 +19,7 @@ import "aos/dist/aos.css";
 const Home = () => {
   useEffect(()=> {
     AOS.init ({duration: 3000});
+
   }, [])
   return (
     <div className="home">
