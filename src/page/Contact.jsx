@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ImLocation } from "react-icons/im";
 import { MdEmail } from "react-icons/md";
@@ -8,15 +8,20 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 const Contact = () => {
-  useEffect(()=> {
-    AOS.init ({duration: 3000});
-  }, [])
+  useEffect(() => {
+    AOS.init({ duration: 3000 });
+  }, []);
+
+  useEffect(() => {
+    window.scroll(0, 0);
+  }, []);
+
   return (
     <div className="contact">
       <div className="cover">
         <div className="overlay"></div>
 
-        <div className="content" >
+        <div className="content">
           <div className="container">
             <h2 data-aos="fade-right">Contact Us</h2>
           </div>
@@ -33,7 +38,7 @@ const Contact = () => {
               style={{ border: "0", borderRadius: "20" }}
             ></iframe>
           </div>
-          
+
           <div className="adress">
             <div className="adress_i">
               <div className="contact_icon">
@@ -49,7 +54,7 @@ const Contact = () => {
               <div className="contact_icon">
                 <BsFillPhoneFill className="icon" />
 
-                <p>+994 50 000 00 00</p>
+                <p>+994 51 573 62 23</p>
               </div>
             </div>
           </div>
@@ -62,8 +67,9 @@ const Contact = () => {
             <div className="content">
               <h3>Get in Touch</h3>
               <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Corrupti labore rem laudantium.
+                Please use the contact details below to contact us if you have
+                any questions. Our experienced team is ready to support you and
+                ensure you receive a quick response.
               </p>
             </div>
 

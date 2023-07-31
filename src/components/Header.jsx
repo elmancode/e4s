@@ -1,8 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Logo from "../image/logo.png";
-import { FiSearch } from "react-icons/fi";
-import { GrClose } from "react-icons/gr";
 import "../style/components/header.scss";
 import { useState, useEffect } from "react";
 
@@ -19,11 +17,6 @@ const Header = () => {
       window.removeEventListener("scroll", listenScrollEvent);
     };
   }, []);
-
-  const [searchShow, setSearchShow] = useState(true);
-  const handleClick = (e) => {
-    setSearchShow((current) => !current);
-  };
 
   return (
     <header>
@@ -44,44 +37,26 @@ const Header = () => {
               <Link to="/"> Home</Link>
             </li>
             <li>
-              <Link to="/service"> Service</Link>
+              <Link to="/about"> About</Link>
+            </li>
+            <li>
+              <Link to="/services"> Services</Link>
             </li>
             <li>
               <Link to="/projects"> Projects</Link>
             </li>
             <li>
-              <Link to="/about"> About</Link>
-            </li>
-            <li>
               <Link to="/contact"> Contact</Link>
             </li>
           </ul>
+
+          <button>
+            <select className="language" name="" id="">
+              <option value="">EN</option>
+              <option value="">AZ</option>
+            </select>
+          </button>
         </nav>
-
-        <button
-          onClick={handleClick}
-          style={{ border: "none", background: "none" }}
-        >
-          <FiSearch className="search" />
-        </button>
-      </div>
-
-      <div
-        className="search_wrap"
-        style={{ visibility: searchShow ? "hidden" : "visible" }}
-      >
-        <div className="search_self">
-          <div className="container">
-            <input type="text" placeholder="Axtarış" />
-            <FiSearch style={{ fontSize: "20px" }} />
-            <button
-              onClick={handleClick}
-              style={{ border: "none", background: "none" }}
-            >
-              <GrClose style={{ fontSize: "20px", marginLeft: "20px" }} />
-            </button>
-          </div>
-        </div>
       </div>
     </header>
   );

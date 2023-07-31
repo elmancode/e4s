@@ -1,9 +1,13 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect } from "react";
 import Unicef from "../image/unicef.png";
 import AzStat from "../image/azstat.png";
 
 const MICS = () => {
+
+  useEffect(() =>{
+    window.scrollTo(0,0)
+  })
+  
   return (
     <div className="mics">
       <div className="cover">

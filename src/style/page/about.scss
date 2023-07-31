@@ -1,7 +1,7 @@
 .about {
   .cover {
     height: 52rem;
-    background-image: url(../../image/aboutorg.jpg);
+    background-image: url(../../image/aboutus2.jpg);
     position: relative;
     background-size: cover;
     background-position: center;
@@ -10,12 +10,12 @@
       width: 100%;
       height: 100%;
       background-color: rgba(0, 0, 0, 0.6);
-      opacity: 0.6;
+      opacity: 0.3;
     }
     .content {
       width: 100%;
       position: absolute;
-      top: 18rem;
+      top: 28rem;
       h2 {
         color: #fff;
         width: 80%;
@@ -53,7 +53,7 @@
   }
 
   .our_vision {
-    margin-top: 9rem;
+    margin-top: 5rem;
     font-family: "Poppins", sans-serif;
     .content {
       display: flex;
@@ -73,6 +73,44 @@
         color: #707070;
         font-size: 16px;
       }
+    }
+  }
+  .core_values {
+    margin-top: 5rem;
+    font-family: "Poppins", sans-serif;
+    .content {
+      display: flex;
+      justify-content: space-between;
+    }
+    h3 {
+      width: 30%;
+      font-size: 26px;
+      color: #3a908a;
+      font-weight: 400;
+    }
+
+    .text {
+      width: 70%;
+      p {
+        margin-bottom: 15px;
+        color: #707070;
+        font-size: 16px;
+        i{
+          color: #0e0e0e;
+        }
+      }
+    }
+  }
+
+  .about_text{
+    display: grid;
+    place-items: center;
+    text-align: center;
+    margin-top: 3rem;
+    p{
+      font-family: "Poppins", sans-serif;
+      width: 62rem;
+      
     }
   }
 

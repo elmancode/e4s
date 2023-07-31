@@ -10,22 +10,21 @@ import Projects from "./page/Projects.jsx";
 import MICS from "./page/MICS";
 
 function App() {
+
   return (
     <div className="App">
 
       <Header/>
-
+      
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/about" element= { <About/>}/>
         <Route path="/contact" element= { <Contact/>}/>
-        <Route path="/service" element= { <Service/>}/>
+        <Route path="/services" element= { <Service/>}/>
         <Route path="/projects" element= { <Projects/>}/>
         <Route path="/MICS" element= { <MICS/>}/>
-      
       </Routes>
-
-
+      
       <Footer/>
 
    

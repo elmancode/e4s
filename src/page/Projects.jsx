@@ -1,10 +1,19 @@
-import React from "react";
+// import React from "react";
+import React, { useState, useEffect } from "react";
 import "../style/page/projects.scss";
 import MICS from "../image/MICS.jpg";
 import Endline from "../image/endline-data.jpg";
 import { Link } from "react-router-dom";
+import Project from "../image/ourprojects.jpg";
+// import { useEffect } from 'react';
+
 
 const Projects = () => {
+
+  useEffect(() =>{
+    window.scroll(0, 0);
+  }, []);
+
   return (
     <div className="projects">
       <div className="cover">
