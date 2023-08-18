@@ -31,7 +31,7 @@ const MICS = () => {
             Azərbaycandakı ana və uşaqların vəziyyətini daha yaxından öyrənmək
             məqsədilə beynəlxalq müqayisəliliyi təmin edən ən böyük məlumat
             mənbəyi Çoxgöstəricili Klaster Sorğusuna (MİCS) 2023-cü ilin
-            may-iyul aylarında start veriləcək.
+            may-iyul aylarında start verildi və layihə avqust ayında bitdi.
           </p>
           <p>
             Statistik məlumatlar Azərbaycan Respublikasında ana və uşaqların
