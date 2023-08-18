@@ -1,9 +1,6 @@
 import React, { useEffect } from "react";
-import { Link } from "react-router-dom";
-import Person from "../image/rufat.jpg";
+import { Link } from "react-router-dom"
 import "../style/page/about.scss";
-import Elmir from "../image/elmir.jpg";
-import Turan from "../image/turan.jpg";
 import AOS from "aos";
 
 const About = () => {
@@ -37,14 +34,15 @@ const About = () => {
 
             <div className="text">
               <p>
-                Our mission at “Evidence for Solutions” (E4S) is to provide unparalleled research services
-                and solutions to empower businesses, organizations, and
-                individuals with actionable insights. We are committed to
-                conducting rigorous and comprehensive research, leveraging our
-                expertise and advanced methodologies to deliver accurate,
-                reliable, and timely results. Through our research, we aim to
-                drive informed decision-making, foster innovation, and
-                contribute to the advancement of knowledge in various fields.
+                Our mission at “Evidence for Solutions” (E4S) is to provide
+                unparalleled research services and solutions to empower
+                businesses, organizations, and individuals with actionable
+                insights. We are committed to conducting rigorous and
+                comprehensive research, leveraging our expertise and advanced
+                methodologies to deliver accurate, reliable, and timely results.
+                Through our research, we aim to drive informed decision-making,
+                foster innovation, and contribute to the advancement of
+                knowledge in various fields.
               </p>
             </div>
           </div>
@@ -118,61 +116,14 @@ const About = () => {
         </div>
       </div>
 
-
-<div className="about_text">
-  <div className="container">
-  <p>
-        Through our vision, mission, and core values, we aim to be a trusted
-        partner, empowering our clients with valuable insights and
-        research-driven solutions that enable them to make informed decisions,
-        drive growth, and achieve their goals.
-      </p>
-  </div>
-</div>
-    
-
-      <div className="team_area">
-        <div className="team">
-          <div className="container">
-            <div className="content">
-              <h3>Our Team </h3>
-              <p>
-                Tour function information without cross action media value
-                quickly maximize timely deliverables.
-              </p>
-            </div>
-
-            <div className="team_pic">
-              <figure>
-                <img src={Elmir} alt="" />
-                <figcaption>
-                  <h3>Elmir Valehli</h3>
-                  <p>Founder & CEO</p>
-                </figcaption>
-              </figure>
-              <figure>
-                <img src={Turan} alt="" />
-                <figcaption>
-                  <h3>Turan Sadiqov </h3>
-                  <p>Manager</p>
-                </figcaption>
-              </figure>
-              <figure>
-                <img src={Person} alt="" />
-                <figcaption>
-                  <h3>Rufat Rufat</h3>
-                  <p>Project Cordinator</p>
-                </figcaption>
-              </figure>
-              <figure>
-                <img src={Person} alt="" />
-                <figcaption>
-                  <h3>Elman Asgarov</h3>
-                  <p>Developer</p>
-                </figcaption>
-              </figure>
-            </div>
-          </div>
+      <div className="about_text">
+        <div className="container">
+          <p>
+            Through our vision, mission, and core values, we aim to be a trusted
+            partner, empowering our clients with valuable insights and
+            research-driven solutions that enable them to make informed
+            decisions, drive growth, and achieve their goals.
+          </p>
         </div>
       </div>
     </div>

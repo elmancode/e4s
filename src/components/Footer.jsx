@@ -5,21 +5,18 @@ import { AiFillInstagram } from "react-icons/ai";
 import { ImLinkedin2 } from "react-icons/im";
 import { AiFillYoutube } from "react-icons/ai";
 import "../style/components/footer.scss";
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 const Footer = () => {
-
-  useEffect(()=> {
-    AOS.init ({duration: 3000});
-  }, [])
+  useEffect(() => {
+    AOS.init({ duration: 3000 });
+  }, []);
   return (
-    <div className="footer">
-      <footer>
+    <footer>
+      <div className="footer">
         <div className="container">
-         
-
           <div className="footer_top" data-aos="zoom-in">
             <div className="logo_nav">
               <Link to="/" className="logo">
@@ -49,23 +46,35 @@ const Footer = () => {
             <div className="social_bar">
               <ul>
                 <li>
-                  <Link to="https://www.facebook.com/evidence4solutions/" target="_blank" >
+                  <Link
+                    to="https://www.facebook.com/evidence4solutions/"
+                    target="_blank"
+                  >
                     <GrFacebookOption />
                   </Link>
                 </li>
 
                 <li>
-                  <Link to="https://www.instagram.com/evidence4solutions/" target="_blank">
+                  <Link
+                    to="https://www.instagram.com/evidence4solutions/"
+                    target="_blank"
+                  >
                     <AiFillInstagram />
                   </Link>
                 </li>
                 <li>
-                  <Link to="https://www.linkedin.com/company/86638019/admin/" target="_blank">
+                  <Link
+                    to="https://www.linkedin.com/company/86638019/admin/"
+                    target="_blank"
+                  >
                     <ImLinkedin2 />
                   </Link>
                 </li>
                 <li>
-                  <Link to="https://www.facebook.com/evidence4solutions/" target="_blank">
+                  <Link
+                    to="https://www.facebook.com/evidence4solutions/"
+                    target="_blank"
+                  >
                     <AiFillYoutube />
                   </Link>
                 </li>
@@ -73,14 +82,12 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="footer_bottom" >
-            <p>
-              Copyright ©2023 All rights reserved 
-            </p>
+          <div className="footer_bottom">
+            <p>Copyright ©2023 All rights reserved</p>
           </div>
         </div>
-      </footer>
-    </div>
+      </div>
+    </footer>
   );
 };
 

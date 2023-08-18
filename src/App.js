@@ -8,6 +8,8 @@ import Contact from "./page/Contact";
 import Service from "./page/Service";
 import Projects from "./page/Projects.jsx";
 import MICS from "./page/MICS";
+import EORE from "./page/EORE.jsx";
+import EU from "./page/EU.jsx"
 
 function App() {
 
@@ -23,6 +25,8 @@ function App() {
         <Route path="/services" element= { <Service/>}/>
         <Route path="/projects" element= { <Projects/>}/>
         <Route path="/MICS" element= { <MICS/>}/>
+        <Route path="/EORE" element= { <EORE/>}/>
+        <Route path="/EU" element= { <EU/>}/>
       </Routes>
       
       <Footer/>

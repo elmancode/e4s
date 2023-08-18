@@ -1,9 +1,9 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import "../style/page/home.scss";
-import Cover from "../image/cover4.jpg";
-import Cover1 from "../image/cover1.jpg";
-import Cover2 from "../image/cover2.jpg";
+import Cover1 from "../image/cover_photo/cover1.jpg";
+import Cover2 from "../image/cover_photo/cover2.jpg";
+import Cover3 from "../image/cover_photo/cover3.jpg";
 import File from "../image/file.png";
 import Visual from "../image/visual.png";
 import Develop from "../image/develop.png";
@@ -11,6 +11,7 @@ import About from "../image/aboutus.jpg";
 import { TbPlayerPlayFilled, TbUserExclamation } from "react-icons/tb";
 import CardProject from "../components/CardProject";
 import { projectsData } from "../data";
+// import Video from "../video/e4s_2023.mp4";
 import Unicef from "../image/unicef.png";
 import WHO from "../image/who.png";
 import MICS from "../image/micslogo.png";
@@ -25,7 +26,7 @@ import "swiper/css/autoplay";
 import "swiper/css/navigation";
 import "swiper/css/scrollbar";
 import "swiper/css/pagination";
-import 'swiper/css/free-mode';
+import "swiper/css/free-mode";
 import {
   Navigation,
   Pagination,
@@ -44,6 +45,11 @@ const Home = () => {
     window.scroll(0, 0);
   }, []);
 
+  const [isPlaying, setIsPlaying] = useState(false);
+
+  const handlePlayClick = () => {
+    setIsPlaying(true);
+  };
   return (
     <div className="home">
       {/* section 1 */}
@@ -55,19 +61,18 @@ const Home = () => {
           effect={"fade"}
           navigation
           pagination={{ clickable: true }}
-          autoplay={{ delay: 3000, disableOnInteraction: false }}
+          autoplay={{ delay: 4000, disableOnInteraction: false }}
           scrollbar={{ draggable: true }}
           onSlideChange={() => console.log("slide change")}
           onSwiper={(swiper) => console.log(swiper)}
+          className="mySwiper"
         >
           <SwiperSlide className="slideitmes">
-            <img src={Cover} alt="coverphoto" />
+            <img src={Cover1} alt="coverphoto" />
             <div className="overlay"> </div>
             <div className="content" data-aos="fade-right">
               <div className="container">
                 <h1>
-                  {/* The independent research company that is specialized in the
-                  generation of high-quality evidence. */}
                   Welcome to Evidence for Solutions (E4S) - Your Source for
                   High-Quality Research and Evidence
                 </h1>
@@ -81,7 +86,7 @@ const Home = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide className="slideitmes">
-            <img src={Cover1} alt="coverphoto" className="cover2" />
+            <img src={Cover2} alt="coverphoto" className="cover2" />
             <div className="overlay"></div>
             <div className="content" data-aos="fade-right">
               <div className="container">
@@ -99,7 +104,7 @@ const Home = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide className="slideitmes">
-            <img src={Cover2} alt="coverphoto" />
+            <img src={Cover3} alt="coverphoto" />
             <div className="overlay"></div>
             <div className="content" data-aos="fade-right">
               <div className="container">
@@ -125,8 +130,9 @@ const Home = () => {
           <div className="content" data-aos="fade-up">
             <span>Services</span>
             <h3>
-              With more than 5 years of experience we can deliver the best
-              product.
+              With a team of experts possessing over 10 years of project
+              experience, E4S is highly committed to delivering profound
+              research solutions for you
             </h3>
           </div>
 
@@ -143,7 +149,7 @@ const Home = () => {
             </div>
 
             <div className="row">
-              <div className="row-items">
+              <div className="row_items">
                 <img src={Visual} alt="" />
                 <h3>Data Analysis & Visualization</h3>
                 <p>
@@ -203,15 +209,14 @@ const Home = () => {
       </section>
 
       {/* section 4 */}
-      <section className="portfolio_area">
-        <div className="portfolio" data-aos="fade-up">
+      <section className="previous_works">
+        <div className="work" data-aos="fade-up">
           <div className="container">
             <div className="content">
               <h3>Previous Works</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum
-                error adipisci accusamus ut optio aperiam? Sit beatae maiores
-                molestiae laudantium.
+                E4S has specialists with a long and positive track record of
+                managing complex projects.
               </p>
             </div>
 
@@ -243,9 +248,9 @@ const Home = () => {
 
             <div className="watch">
               <div className="video_watch" data-aos="fade-right">
-                <Link to="video_watch">
+  
                   <TbPlayerPlayFilled className="play" />
-                </Link>
+            
               </div>
               <div className="text" data-aos="fade-left">
                 <span>Watch video</span>
@@ -253,70 +258,84 @@ const Home = () => {
             </div>
           </div>
 
-          <div className="rightside"></div>
+          {/* <div className="rightside">
+
+            {!isPlaying ? (
+              <div className="btn">
+                <button onClick={handlePlayClick}>
+                <TbPlayerPlayFilled className="play" />
+             
+                </button>
+              </div>
+            ) : (
+               
+                <video autoPlay controls>
+                  <source src={Video} type="video/mp4" />
+                </video>
+            
+            )}
+          </div> */}
         </div>
       </section>
 
       {/* section 6 */}
-      <div className="partners" data-aos="fade-up">
-        <div className="container">
-          <div className="content">
-            <h3>Our Partners</h3>
-            <p>
-              At Evidence for Solutions (E4S), we are incredibly proud to work
-              with highly esteemed institutions and companies to create positive
-              change with the help of evidence-based solutions. Our valuable
-              collaborations have advanced our objective to produce high-quality
-              evidence and support decision-making processes.
-            </p>
-          </div>
+      <section className="partners">
+        <div className="partners" data-aos="fade-up">
+          <div className="container">
+            <div className="content">
+              <h3>Our Partners</h3>
+              <p>
+                At Evidence for Solutions (E4S), we are incredibly proud to work
+                with highly esteemed institutions and companies to create
+                positive change with the help of evidence-based solutions. Our
+                valuable collaborations have advanced our objective to produce
+                high-quality evidence and support decision-making processes.
+              </p>
+            </div>
 
-          <div className="partners_logo">
-            <Swiper
-              modules={[
-                FreeMode,
-                Pagination,
-                Autoplay,
-              ]}
-              spaceBetween={50}
-              slidesPerView={3}
-              freeMode={true}
-              autoplay={{ delay: 2000, disableOnInteraction: false }}
-      
-            >
-              <SwiperSlide>
-              <div className="unicef">
-                <img src={Unicef} alt="uniceflogo" />
-              </div>
-              </SwiperSlide>
+            <div className="partners_logo">
+              <Swiper
+                modules={[FreeMode, Pagination, Autoplay]}
+                spaceBetween={50}
+                slidesPerView={3}
+                freeMode={true}
+                autoplay={{ delay: 2000, disableOnInteraction: false }}
+                className="logo"
+              >
+                <SwiperSlide>
+                  <div className="unicef">
+                    <img src={Unicef} alt="uniceflogo" />
+                  </div>
+                </SwiperSlide>
 
-              <SwiperSlide>
-              <div className="who">
-                <img src={WHO} alt="whologo" />
-              </div>
-              </SwiperSlide>
+                <SwiperSlide>
+                  <div className="who">
+                    <img src={WHO} alt="whologo" />
+                  </div>
+                </SwiperSlide>
 
-              <SwiperSlide>
-              <div className="who">
-                <img src={MICS} alt="" className="mics" />
-              </div>
-              </SwiperSlide>
+                <SwiperSlide>
+                  <div className="who">
+                    <img src={MICS} alt="" className="mics" />
+                  </div>
+                </SwiperSlide>
 
-              <SwiperSlide>
-              <div className="unicef">
-                <img src={Unicef} alt="uniceflogo" />
-              </div>
-              </SwiperSlide>
+                <SwiperSlide>
+                  <div className="unicef">
+                    <img src={Unicef} alt="uniceflogo" />
+                  </div>
+                </SwiperSlide>
 
-              <SwiperSlide>
-              <div className="who">
-                <img src={WHO} alt="whologo" />
-              </div>
-              </SwiperSlide>
-            </Swiper>
+                <SwiperSlide>
+                  <div className="who">
+                    <img src={WHO} alt="whologo" />
+                  </div>
+                </SwiperSlide>
+              </Swiper>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
 
       {/* section 7 */}
       <section className="get_in_touch_area">

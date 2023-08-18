@@ -2,15 +2,11 @@
 import React, { useState, useEffect } from "react";
 import "../style/page/projects.scss";
 import MICS from "../image/MICS.jpg";
-import Endline from "../image/endline-data.jpg";
 import { Link } from "react-router-dom";
 import Project from "../image/ourprojects.jpg";
-// import { useEffect } from 'react';
-
 
 const Projects = () => {
-
-  useEffect(() =>{
+  useEffect(() => {
     window.scroll(0, 0);
   }, []);
 
@@ -31,50 +27,25 @@ const Projects = () => {
           <div className="content">
             <h3>Awesome Work</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum
-              error adipisci accusamus ut optio aperiam? Sit beatae maiores
-              molestiae laudantium.
+              E4S puts developing sustainable capacity in everything we do, as
+              our high-quality work should leave a lasting legacy.
             </p>
           </div>
         </div>
       </div>
 
       <div className="work_row">
-
         <Link to="/MICS">
-        <div className="image">
-          <div className="overlay"></div>
-          <img src={MICS} alt="" />
-          <div className="text">
-            <h3>MICS</h3>
-            <p>Lorem, ipsum.</p>
-          </div>
-        </div>
+        <h2>MICS</h2>
         </Link>
-        <div className="image">
-        <div className="overlay"></div>
-          <img src={Endline} alt="" />
-          <div className="text">
-            <h3>Endline-Data</h3>
-            <p>Lorem, ipsum.</p>
-          </div>
-        </div>
-        <div className="image">
-        <div className="overlay"></div>
-          <img src={MICS} alt="" />
-          <div className="text">
-            <h3>Baseline-Data</h3>
-            <p>Lorem, ipsum.</p>
-          </div>
-        </div>
-        <div className="image">
-        <div className="overlay"></div>
-          <img src={MICS} alt="" />
-          <div className="text">
-            <h3>Endline-Data</h3>
-            <p>Lorem, ipsum.</p>
-          </div>
-        </div>
+
+        <Link to="/EORE">
+        <h2>EORE</h2>
+        </Link>
+
+        <Link to="/EU">
+        <h2>EU</h2>
+        </Link>
       </div>
     </div>
   );

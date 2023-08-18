@@ -21,33 +21,30 @@ const MICS = () => {
       </div>
 
       <div className="text">
-        <div className="container">
-          <h3>MICS Azərbaycan 2023</h3> 
+      <div className="container">
+          <h3>MICS Azerbaijan 2023</h3>
           <p>
-            Uşaqların həyatını yaxşılığa doğru dəyişmək, doğru statistik
-            məlumatlara çıxışla mümkündür.
+            The Multiple Indicator Cluster Survey (MICS) initiative carries out
+            household surveys throughout several nations to collect information
+            on different variables relating to the welfare of children and
+            women, covering topics like health, education, child protection,
+            water, and sanitation.
           </p>
           <p>
-            Azərbaycandakı ana və uşaqların vəziyyətini daha yaxından öyrənmək
-            məqsədilə beynəlxalq müqayisəliliyi təmin edən ən böyük məlumat
-            mənbəyi Çoxgöstəricili Klaster Sorğusuna (MİCS) 2023-cü ilin
-            may-iyul aylarında start verildi və layihə avqust ayında bitdi.
+            The E4S team monitored the teams to guarantee that the process was
+            carried out according to the guidelines set by the MICS project. The
+            E4S team conducted regular site visits in order to observe the team
+            in the field.
           </p>
           <p>
-            Statistik məlumatlar Azərbaycan Respublikasında ana və uşaqların
-            sosial rifah vəziyyətini və insan inkişafını işıqlandıracaq,
-            Dayanıqlı İnkişaf Məqsədləri ilə müəyyən edilmiş hədəflərə çatmanın
-            ölçülməsinə və #hərbiruşaqüçün məlumatlara əsaslanan layihələrin
-            hazırlanmasına dəstək göstərəcək.
+          The E4S team completed a number of significant tasks during the fieldwork:
           </p>
           <ul>
-            <li>Lorem ipsum dolor sit amet.</li>
-            <li>Lorem ipsum dolor sit amet.</li>
-            <li>Lorem ipsum dolor sit amet.</li>
-            <li>Lorem ipsum dolor sit amet.</li>
-            <li>Lorem ipsum dolor sit amet.</li>
+            <li>Observing Interview Process.</li>
+            <li>Monitoring the Anthropometry and Water Quality Testing.</li>
+            <li>Checking revisited households.</li>
+            <li>Verification of GPS points.</li>
           </ul>
-         
         </div>
 
         <div className="partners">
