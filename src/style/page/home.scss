@@ -282,7 +282,7 @@
       height: 28rem;
       .btn {
         height: 100%;
-        // background-image: url(..//../image/mics_project/mics1.jpg);
+        background-image: url(..//../image/mics1.jpg);
         background-size: cover;
         background-position: center;
         border-top-left-radius: 20px;
@@ -494,14 +494,13 @@
       width: 100%;
       margin-top: 4rem;
       .content {
+        text-align: center;
+        display: grid;
+        place-items: center;
         h3 {
-          padding-top: 30px;
-          margin: 0 4rem;
-          font-size: 26px;
-          line-height: 38px;
-          font-weight: 400;
-          color: #1f1f1f;
-          font-size: bold;
+          width: 100%;
+          font-size: 1.5rem;
+          line-height: 2rem;
         }
       }
       .service-row {

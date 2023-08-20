@@ -258,7 +258,7 @@ const Home = () => {
             </div>
           </div>
 
-          {/* <div className="rightside">
+          <div className="rightside">
 
             {!isPlaying ? (
               <div className="btn">
@@ -268,13 +268,14 @@ const Home = () => {
                 </button>
               </div>
             ) : (
+              <></>
                
-                <video autoPlay controls>
-                  <source src={Video} type="video/mp4" />
-                </video>
+                // <video autoPlay controls>
+                //   <source src={Video} type="video/mp4" />
+                // </video>
             
             )}
-          </div> */}
+          </div>
         </div>
       </section>
 

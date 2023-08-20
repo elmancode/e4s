@@ -1,7 +1,6 @@
-// import React from "react";
+
 import React, { useState, useEffect } from "react";
 import "../style/page/projects.scss";
-import MICS from "../image/MICS.jpg";
 import { Link } from "react-router-dom";
 import Project from "../image/ourprojects.jpg";
 

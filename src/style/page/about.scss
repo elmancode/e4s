@@ -1,4 +1,5 @@
 .about {
+  width: 100%;
   .cover {
     height: 52rem;
     background-image: url(../../image/aboutus2.jpg);
@@ -95,22 +96,22 @@
         margin-bottom: 15px;
         color: #707070;
         font-size: 16px;
-        i{
+        i {
           color: #0e0e0e;
         }
       }
     }
   }
 
-  .about_text{
+  .about_text {
+    width: auto;
     display: grid;
     place-items: center;
     text-align: center;
     margin-top: 3rem;
-    p{
+    p {
       font-family: "Poppins", sans-serif;
       width: 62rem;
-      
     }
   }
 
@@ -158,5 +159,32 @@
         }
       }
     }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+
+  .about{
+    .cover {
+      height: 30rem; 
+      width: auto;
+      .content {
+        width: 100%;
+        position: absolute;
+        top: 19rem;
+        h2 {
+          width: 90%;
+          font-size: 2rem;
+          font-weight: 900;
+          line-height: 40px;
+        }
+      }
+  }
+
+  .about_text {
+    p {
+      width: 100%;
+    }
+  }
   }
 }
