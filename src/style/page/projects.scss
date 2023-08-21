@@ -65,47 +65,60 @@
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    .image {
-      padding: 5px;
-      position: relative;
-      img {
-        height: 500px;
-        width: 667px;
-      }
-      .text {
-        position: absolute;
-        display: none;
-        text-align: center;
-        top: 50%;
-        left: 40%;
+    a{
+      display: grid;
+      place-items: center;
+      width: 200px;
+      height: 50px;
+      border: 2px solid  black;
+      border-radius: 20px;
+      margin: 4px;
+      h2{
         font-family: "Poppins", sans-serif;
-
-        h3 {
-          font-size: 24px;
-          color: #fff;
-          letter-spacing: 3px;
-        }
-        p {
-          color: rgba(255, 255, 255, 0.5);
-          letter-spacing: 2px;
-        }
-      }
-      &:hover .text {
-        display: block;
-      }
-
-      .overlay {
-        position: absolute;
-        display: none;
-        width: 667px;
-        height: 500px;
-        background-color: rgba(0, 0, 0, 0.6);
-        opacity: 0.8;
-      }
-      &:hover .overlay {
-        display: block;
+        color: #1f1f1f;
       }
     }
+    // .image {
+    //   padding: 5px;
+    //   position: relative;
+    //   img {
+    //     height: 500px;
+    //     width: 667px;
+    //   }
+    //   .text {
+    //     position: absolute;
+    //     display: none;
+    //     text-align: center;
+    //     top: 50%;
+    //     left: 40%;
+    //     font-family: "Poppins", sans-serif;
+
+    //     h3 {
+    //       font-size: 24px;
+    //       color: #fff;
+    //       letter-spacing: 3px;
+    //     }
+    //     p {
+    //       color: rgba(255, 255, 255, 0.5);
+    //       letter-spacing: 2px;
+    //     }
+    //   }
+    //   &:hover .text {
+    //     display: block;
+    //   }
+
+    //   .overlay {
+    //     position: absolute;
+    //     display: none;
+    //     width: 667px;
+    //     height: 500px;
+    //     background-color: rgba(0, 0, 0, 0.6);
+    //     opacity: 0.8;
+    //   }
+    //   &:hover .overlay {
+    //     display: block;
+    //   }
+    // }
   }
 }
 

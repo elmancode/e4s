@@ -35,15 +35,15 @@ const Projects = () => {
 
       <div className="work_row">
         <Link to="/MICS">
-        <h2>MICS</h2>
+        <h2>MICS Project</h2>
         </Link>
 
         <Link to="/EORE">
-        <h2>EORE</h2>
+        <h2>EORE Project</h2>
         </Link>
 
         <Link to="/EU">
-        <h2>EU</h2>
+        <h2>EU  Project</h2>
         </Link>
       </div>
     </div>
