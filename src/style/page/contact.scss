@@ -218,56 +218,7 @@
             input {
               width: 100%;
             }
-          }
-
-          input {
-            width: 100%;
-            border: 1px solid #c9c9c9;
-            height: 50px;
-            outline: none;
-            border-radius: 30px;
-            padding: 20px 16px;
-            margin-bottom: 25px;
-            font-size: 14px;
-            color: #000;
-            font-weight: 400;
-            font-family: "Poppins", sans-serif;
-          }
-
-          textarea {
-            height: 13rem;
-            width: 100%;
-            border: 1px solid #c9c9c9;
-            outline: none;
-            border-radius: 30px;
-            padding: 20px 16px;
-            margin-bottom: 25px;
-            font-size: 14px;
-            color: #000;
-            font-weight: 400;
-            font-family: "Poppins", sans-serif;
-          }
-
-          .boxed_btn {
-            background: #3a908a;
-            width: 100%;
-            color: #fff;
-            display: inline-block;
-            padding: 12px 33px;
-            font-size: 16px;
-            font-weight: 500;
-            border: 1px solid transparent;
-            border-radius: 30px;
-            text-align: center;
-            cursor: pointer;
-            font-family: "Poppins", sans-serif;
-            &:hover {
-              background-color: transparent;
-              transition: 1s;
-              border: 1px solid #3a908a;
-              color: #3a908a;
-            }
-          }
+          }         
         }
       }
     }
