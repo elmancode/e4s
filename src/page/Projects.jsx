@@ -2,7 +2,6 @@
 import React, { useState, useEffect } from "react";
 import "../style/page/projects.scss";
 import { Link } from "react-router-dom";
-import Project from "../image/ourprojects.jpg";
 
 const Projects = () => {
   useEffect(() => {

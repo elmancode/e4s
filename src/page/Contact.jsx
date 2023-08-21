@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import { Link } from "react-router-dom";
 import { ImLocation } from "react-icons/im";
 import { MdEmail } from "react-icons/md";
 import { BsFillPhoneFill } from "react-icons/bs";

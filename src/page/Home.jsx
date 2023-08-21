@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "../style/page/home.scss";
 import Cover1 from "../image/cover_photo/cover1.jpg";
@@ -8,7 +8,7 @@ import File from "../image/file.png";
 import Visual from "../image/visual.png";
 import Develop from "../image/develop.png";
 import About from "../image/aboutus.jpg";
-import { TbPlayerPlayFilled, TbUserExclamation } from "react-icons/tb";
+import { TbPlayerPlayFilled} from "react-icons/tb";
 import CardProject from "../components/CardProject";
 import { projectsData } from "../data";
 // import Video from "../video/e4s_2023.mp4";
